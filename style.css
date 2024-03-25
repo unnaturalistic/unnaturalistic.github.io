@@ -1,0 +1,122 @@
+fade-in {
+font-family: Arial;
+color: white;
+font-size: 60px;
+height: 300px;
+width: 645px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-49%, -10%);
+-webkit-animation: fadeinout 4s linear forwards;
+animation: fadeinout 4s linear forwards;
+}
+
+@-webkit-keyframes fadeinout {
+0%,100% { opacity: 0; }
+50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+0%,100% { opacity: 0; }
+50% { opacity: 1; }
+}
+
+body {
+background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.topHeader {
+top: 0%;
+left: 0%;
+transform: translate(-1%, -40%);
+background: var(--beforeHover);
+display: flex;
+flex-direction: row;
+height: 3.6em;
+width: 100%;
+}
+
+.headerContainer {
+position: absolute;
+display: flex;
+background: var(--beforeHover);
+align-content: center;
+justify-content: center;
+width: 101.6%;
+}
+
+.headerBtn {
+height: 3em;
+width: 8em;
+width: 11em;
+font-size: 1.2em;
+color: var(--background);
+
+background: var(--beforeHover);
+border: 0px;
+cursor: pointer;
+}
+
+.headerBtn:hover {
+transition: 0.3s;
+background: var(--afterHover);
+color: var(--font);
+}
+
+.headerBtnSelected {
+    height: 3em;
+    width: 8em;
+    width: 11em;
+    font-size: 1.2em;
+    color: var(--background);
+    
+    background: var(--afterHover);
+    border: 0px;
+    cursor: pointer;
+}
+
+footer {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+height: 3em;
+display: flex;
+align-content: center;
+justify-content: center;
+/* justify-content: center; */
+font-size: 1.2em;
+overflow: hidden;
+}
+
+.banner {
+border: 0;
+left: 0;
+bottom: 0;
+width: 8em;
+height: 3.2em;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+
+}
+
+.banner:hover {
+transition: 0.3s;
+background: #1d1e21;
+/* background: linear-gradient(0deg, rgba(156,197,161,1) 0%, rgba(33,104,105,1) 100%); */
+}
+
+* {
+--background: #00000;
+--beforeHover: #294D5C;
+--afterHover: #1d1e21;
+--font: #DCE1DE;
+color: white;
+font-family: 'Courier New', Courier, monospace;
+text-align: center; 
+}
