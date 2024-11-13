@@ -1,4 +1,2 @@
-//Format:
-//date,tag,desc,meta
 11.13.24,First_Rev,First Revision,::
 
