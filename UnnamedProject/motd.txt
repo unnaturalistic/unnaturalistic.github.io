@@ -1,1 +1,1 @@
-fixed signs not showing content on map "HillTop"
+added new content on map "HillTop"
