@@ -1,73 +1,41 @@
-<html lang="html">
-    <header class="topHeader">
-        <!--Thanks liminal :3333-->
-        <div class="headerContainer">
-            <a href="./projects.html">
-                <button class="headerBtn">Projects</button>
-            </a>
-            <a href="./global.html">
-                <button class="headerBtn">Global Chat</button>
-            </a>
-            <a href="./index.html">
-                <button class="headerBtnSelected">Home</button>
-            </a>
-            <!-- <button class="headerBtn">Socials</button> -->
-        </div>
-        <link rel="icon" type="image/x-icon" href="favicon.png">
-    </header>
+<!-- why are you looking here? -->
+<!-- you are a very mistrusting person. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <header>
         <link rel="stylesheet" href="style.css">
         <link rel="icon" type="image/x-icon" href="favicon.png">
     </header>
-
-    <footer>
-        <a class="banner">
-            <img src="https://gnawmon.vern.cc/assets/88x31/mwd.png">
-        </a>
-        <a href="https://www.youtube.com/@minewatch/about" class="banner">
-            <img src="https://gnawmon.vern.cc/assets/88x31/minexplorer.png">
-        </a>
-        <a href="https://gnawmon.vern.cc/" class="banner">
-            <img src="https://gnawmon.vern.cc/assets/88x31/gnawmon.png">
-        </a>
-        <a href="https://andrewidot.neocities.org/" class="banner">
-            <img src="https://andrewidot.neocities.org/assets/88x31/andrewidot_88x31.gif">
-        </a>
-        <a class="banner">
-            <img src="unnatural.png">
-        </a>
-        <a class="banner">
-            <img src="alphaver.png">
-        </a>
-        <a href="https://tauon.dev/" class="banner"> <img src="https://tauon.dev/images/88x31/lily.png"></a>
-
-        <a href="https://liminalityyy.github.io/" class="banner">
-            <img src="https://liminalityyy.github.io/images/card/liminal.png">
-        </a>
-        <a href="https://dottych.github.io" class="banner">
-            <img src="https://gnawmon.vern.cc/assets/88x31/dottych.png">
-        </a>
-        <a href="https://illudens.neocities.org"class="banner">
-            <img src="https://illudens.neocities.org/illudens.gif">
-        </a>
-    </footer>
-    <body>
-        <h2>Hi</h2>
-        Im unnatural, a programmer (techstack <a href="https://stackshare.io/unnaturalistic/the-unnatural-stack">here</a>) writer and a professional dumbass<br>
-        I have several projects and most of them are based around Minecraft (i might have abandoned some already)<br>
-        Website is obviously not finished<br>
-        <p style="font-style: italic; font-size: small;">Embark on a journey through a desolate realm within dimension 62, where nuclear conflict has left Earth barren. Amidst the ruins, unsettling entities lurk in the shadows. You embark on a haunting mission to uncover the chilling truth of solitude in this unforgiving <a href="./projects.html">wasteland.</a></p>
-        <fade-in id="welcome">Welcome</fade-in>
-    </body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unnatural</title>
+</head>
+<body>
+    welcome, to unnatural's website.
+    <br>
+    a few links to check out:
+    <br>
+    <a href="https://google.com/search?q=">link 1</a>
+    <br>
+    <fade-in>Hello</fade-in>
+</body>
+<p id="text"></p>
 </html>
+
 <script>
-    let thing = ""
+    let text = ""
+    document.addEventListener("keypress", function(event){
+        var x = event.key;
+        if (x == "Enter") {
+            open("https://ufetch.onrender.com/a/" + randomRange(1, 30))
+        }
+        text += x
+        document.getElementById("text").innerHTML = text;
+    });
+
+    function randomRange(start, stop) {
+        return Math.floor(Math.random() * (stop - start)) + start; 
+    }  
 </script>
-
-
-<!--        Hi im unnatural <br>
-        Im a writer and programmer <br>
-        I have several programming projects which most of them are based around minecraft <br>
-        
-        <fade-in>test</fade-in>
--->
